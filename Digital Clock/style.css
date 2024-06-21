@@ -1,0 +1,59 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poiret+One&display=swap');
+
+
+*{
+    font-family: "Archivo Black", sans-serif;
+}
+
+body{
+    overflow: hidden;
+    background: conic-gradient(at bottom left, deeppink, cyan);
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalclock{
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.121);
+}
+
+.digitalclock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:768px){
+    #bar1,#bar2{
+        display: none;
+    }
+
+    .digitalclock{
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalclock h1{
+        display: block;
+    }
+}   
+
+@media(max-width:480px){
+    .digitalclock h1{
+        font-size: 4rem;
+    }
+}
